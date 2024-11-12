@@ -7,9 +7,9 @@ import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 <MainLayout title="Titel">
-	<article>
+	<article class="mx-3">
 		<section class="mt-[100px]">
-			<svg class="w-[460px] md:w-[700px] lg:w-[900px]" width="900" height="auto" viewBox="0 0 1183 236" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<svg class="w-72 md:w-[700px] lg:w-[900px]" width="900" height="auto" viewBox="0 0 1183 236" fill="none" xmlns="http://www.w3.org/2000/svg">
 			<g clip-path="url(#clip0_21_78)">
 			<path d="M165.084 8.55327C160.022 9.41855 154.96 10.2838 149.897 11.1534C154.704 27.5158 159.506 43.8825 164.313 60.2449L106.174 93.6922C113.594 84.0963 121.01 74.496 128.43 64.9001C126.432 66.0769 124.434 67.258 122.44 68.4348C110.279 64.8222 98.1214 61.2097 85.9597 57.5972C75.0072 82.3484 64.0548 107.104 53.1023 131.855C55.3864 129.212 57.6705 126.573 59.9546 123.929C72.06 136.441 84.1697 148.953 96.275 161.465L139.526 128.312C145.975 142.053 152.429 155.789 158.878 169.529L98.5678 216.064C73.5856 222.709 48.5991 229.355 23.6169 236.004C28.948 232.755 34.279 229.506 39.61 226.261C26.4038 195.972 13.2019 165.688 0 135.399L31.9559 50.7485L86.4148 12.6374C112.641 11.2746 138.863 9.91608 165.089 8.55327H165.084Z" fill="white"/>
 			<path d="M198.618 53.3184C201.726 75.3137 204.833 97.3134 207.945 119.309C206.827 116.86 205.713 114.416 204.595 111.967C192.208 136.783 179.816 161.595 167.429 186.411C182.959 196.794 198.488 207.178 214.017 217.561C214.078 222.419 214.134 227.278 214.195 232.141C222.465 196.898 230.734 161.655 239.004 126.413L279.884 111.24C275.632 148.464 271.38 185.688 267.124 222.913C282.619 211.154 298.113 199.394 313.608 187.635C319.927 179.696 326.246 171.762 332.57 163.823C325.028 140.828 317.483 117.829 309.941 94.8344C318.709 79.7742 327.473 64.7141 336.241 49.6539C325.657 40.1878 315.069 30.7217 304.484 21.2555C301.988 15.8216 299.492 10.3877 296.995 4.95371L277.405 82.5171C277.34 80.0208 277.275 77.5288 277.214 75.0325C265.685 78.9652 254.156 82.8935 242.627 86.8262L239.411 0C238.375 2.7213 237.344 5.44692 236.308 8.16822L198.622 53.3184H198.618Z" fill="white"/>
@@ -25,41 +25,41 @@ import thumbsup from "../assets/images/thumbsup.png";
 			</clipPath>
 			</defs>
 			</svg>
-			<h2 class="uppercase text-7xl text-[#d19ff1]">Typeface</h2>
+			<h2 class="uppercase text-4xl md:text-7xl absolute top-20 text-[#d19ff1]">Typeface</h2>
 		</section>
-		<section class="flex justify-self-center text-center mt-[140px] w-[400px] md:w-[600px]">
+		<section class="flex justify-self-center text-center mt-[140px] w-72 md:w-[400px] lg:w-[600px]">
 			<Dots class="">			
 				<p>Inspired by <span class="text-[#9F61BC]">90s graffiti</span>, this typeface brings raw street energy to your designs. Dynamic and <span class="text-[#9F61BC]">unapologetic</span>, it doesn’t just speak — it shouts.</p>
 			</Dots>
 		</section>
-		<section class="w-[260px] md:w-[400px] lg:w-[500px] flex flex-row justify-self-center justify-center">
-			<svg width="600" height="900" viewBox="0 0 687 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<section class="w-[260px] md:w-[400px] lg:w-[500px] flex flex-row justify-self-center justify-center mt-20">
+			<svg width="600" height="auto" viewBox="0 0 687 900" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M641.649 124.873C632.951 211.052 624.27 297.231 615.572 383.41C583.34 337.408 551.107 291.407 518.874 245.406C472.664 225.272 426.453 205.157 380.243 185.024C349.012 200.459 317.782 215.894 286.551 231.311C293.961 232.365 301.352 233.419 308.762 234.473C305.701 272.417 302.659 310.379 299.598 348.324C354.775 336.908 409.97 325.511 465.147 314.095L683.886 485.131L620.906 740.773C642.937 738.665 664.969 736.575 687 734.467C530.096 789.65 373.191 844.816 216.287 900C163.741 842.851 111.213 785.702 58.6669 728.554L0 472.322C52.7608 527.22 105.539 582.135 158.318 637.033C237.155 640.892 315.974 644.751 394.811 648.627C404.386 625.278 413.961 601.929 423.536 578.58C433.559 591.371 443.563 604.18 453.585 616.971C429.585 578.259 405.585 539.546 381.585 500.816C321.003 507.176 260.439 513.535 199.858 519.895C157.03 455.583 114.202 391.27 71.3918 326.958C56.7877 331.906 42.2016 336.837 27.5975 341.785C83.186 255.964 138.774 170.142 194.363 84.3209L475.33 35.9614C478.158 23.9743 480.968 11.9871 483.796 0C536.413 41.6066 589.049 83.2133 641.667 124.838L641.649 124.873Z" fill="white"/>
 			</svg>				
 		</section>
 		<section class="mt-[100px]">
 			<Dots class="">
-				<div class="flex flex-row">
-					<div class="flex flex-col">
-						<img class="w-[200px] md:w-[280px] lg:w-[380px]" src="1img.webp" alt="mockup lyserød baggrund">
-						<img class="w-[200px] md:w-[280px] lg:w-[380px]" src="2img.webp" alt="mockup blå baggrund">
+				<div class="flex flex-col md:flex-row mx-auto w-72 md:w-[600px] lg:w-[800px]">
+					<div class="flex flex-col mx-auto">
+						<img class="w-72 md:w-[280px] lg:w-[380px]" src="1img.webp" alt="mockup lyserød baggrund">
+						<img class="w-72 md:w-[280px] lg:w-[380px]" src="2img.webp" alt="mockup blå baggrund">
 					</div>
 					<div>
 						<h3 class="uppercase">using the font</h3>
-						<p class="w-[300px]">Rebellious simplicity meets urban edge. This typeface channels 90s graffiti’s spirit in a clean, versatile form. </p>
+						<p class="md:w-[300px]">Rebellious simplicity meets urban edge. This typeface channels 90s graffiti’s spirit in a clean, versatile form. </p>
 						<p>Ideal for projects that need a hint of attitude without sacrificing clarity.</p>
 					</div>
 				</div>
 			</Dots>
 		</section>
-		<section  class="mt-[100px]">
+		<section class="mt-[100px] pb-10">
 			<Dots>
-				<div>
-					<h3></h3>
+				<div class="w-72">
+					<h3 class="uppercase">sketching and process</h3>
 					<p>Starting with bold, gritty hand-drawn sketches inspired by 90s graffiti, each character was scanned and refined in Illustrator to maintain a raw, street-art feel. <br>
 						Converted to SVG for sharp, scalable use, the typeface was tested and adjusted to ensure it held its rebellious energy across both digital and print formats.</p>
 				</div>
-				<div class="w-[240px] md:w-[340px]">
+				<div class="w-[240px] md:w-[340px] flex justify-self-center mb-12">
 					<img src="skitse.webp" alt="">
 				</div>
 			</Dots>

@@ -12,13 +12,29 @@
   }
 
   h1,
-  h2,
   h3,
   h4,
-  h5,
+  h5 {
+    color: #ffffff;
+    font-family: "Alexandria";
+    margin-top: 3rem;
+    margin-bottom: 5px;
+  }
+
+  h2 {
+    color: #ffffff;
+    font-family: "Alexandria";
+    padding-bottom: 10px;
+  }
+
+  h3 {
+    color: #d19ff1;
+    font-weight: 700;
+    font-size: x-large;
+  }
   p {
     color: #ffffff;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    font-family: "Alexandria";
+    font-weight: 300;
   }
 }
