@@ -12,19 +12,14 @@
   }
 
   h1,
+  h2,
   h3,
   h4,
   h5 {
     color: #ffffff;
     font-family: "Alexandria";
     margin-top: 3rem;
-    margin-bottom: 5px;
-  }
-
-  h2 {
-    color: #ffffff;
-    font-family: "Alexandria";
-    padding-bottom: 10px;
+    margin-bottom: 8px;
   }
 
   h3 {
