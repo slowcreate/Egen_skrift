@@ -1,6 +1,35 @@
 ---
-import Button from "../components/Button.astro";
+import Button from '../components/Button.astro';
+import logo from "../assets/images/Digital_Cleanup_Day.webp";
 ---
-<div>
-    <Button class=""></Button>
+<div x-data="{ showmenu: false }" class="text-white flex justify-self-end p-3 lg:p-4">
+    <div id="navbar" class="flex justify-between items-center">
+        <!-- Desktop Menu -->
+        <nav id="desktopmenu" class="hidden lg:block mx-10 -ml-10">
+            <ul class="flex flex-row gap-8">
+                <li><a href="/saadan" class="transition hover:text-[#DB901B]">About</a></li>
+                <li><a href="#" class="transition hover:text-[#DB901B]">Sketching and process</a></li>
+            </ul>
+        </nav> 
+        <!-- Burger Button for Mobile (Hidden on medium and larger screens) -->
+        <Button id="burgermenu" class="md:hidden" x-on:click="showmenu = !showmenu">
+        </Button>
+    </div>
+    
+    <!-- Mobile Menu -->
+    <nav id="mobilmenu" class="flex flex-col items-center pt-4 lg:hidden"
+        :class="{'block': showmenu, 'hidden': !showmenu}" 
+        x-transition x-on:click.outside="showmenu = false">
+        <ul class="flex flex-col gap-4">
+            <li><a href="/saadan" class="transition hover:text-[#DB901B]">About</a></li>
+            <li><a href="#" class="transition hover:text-[#DB901B]">Sketching and process</a></li> 
+        </ul>
+        <!-- Optional Close Button -->
+        <Button x-on:click="showmenu = false">
+            Close
+        </Button>
+    </nav>
 </div>
+
+<!-- Spacer for layout -->
+<div class="pt-12 lg:pt-16"></div>
