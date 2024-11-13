@@ -2,34 +2,32 @@
 import Button from '../components/Button.astro';
 import logo from "../assets/images/Digital_Cleanup_Day.webp";
 ---
-<div x-data="{ showmenu: false }" class="text-white flex justify-self-end p-3 lg:p-4">
-    <div id="navbar" class="flex justify-between items-center">
+<div x-data="{ showmenu: false }" class="text-white flex flex-col lg:flex-row justify-self-end p-3 lg:p-4">
+    <div id="navbar" class="flex justify-between items-center w-full pt-5">
         <!-- Desktop Menu -->
-        <nav id="desktopmenu" class="hidden lg:block mx-10 -ml-10">
+        <nav id="desktopmenu" class="hidden lg:block mx-8">
             <ul class="flex flex-row gap-8">
-                <li><a href="/saadan" class="transition hover:text-[#DB901B]">About</a></li>
-                <li><a href="#" class="transition hover:text-[#DB901B]">Sketching and process</a></li>
+                <li><a href="/about" class="transition hover:text-[#d19ff1]">About</a></li>
+                <li><a href="/sketching" class="transition hover:text-[#d19ff1]">Sketching and process</a></li>
             </ul>
         </nav> 
         <!-- Burger Button for Mobile (Hidden on medium and larger screens) -->
-        <Button id="burgermenu" class="md:hidden" x-on:click="showmenu = !showmenu">
+        <Button id="burgermenu" class="lg:hidden" x-on:click="showmenu = !showmenu">
+            <!-- Burger Menu Icon inside the Button component -->
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
         </Button>
     </div>
     
     <!-- Mobile Menu -->
-    <nav id="mobilmenu" class="flex flex-col items-center pt-4 lg:hidden"
+        <nav id="mobilmenu" class="absolute top-0 right-0 flex flex-col items-end pt-4 lg:hidden"
         :class="{'block': showmenu, 'hidden': !showmenu}" 
-        x-transition x-on:click.outside="showmenu = false">
-        <ul class="flex flex-col gap-4">
-            <li><a href="/saadan" class="transition hover:text-[#DB901B]">About</a></li>
-            <li><a href="#" class="transition hover:text-[#DB901B]">Sketching and process</a></li> 
-        </ul>
-        <!-- Optional Close Button -->
-        <Button x-on:click="showmenu = false">
-            Close
-        </Button>
-    </nav>
-</div>
+        x-transition x-on:click.outside="showmenu = true" x-on:click="showmenu = false">
+            <ul class="flex flex-col pt-24 pr-5 gap-4 text-end">
+                <li><a href="/about" class="transition hover:text-[#d19ff1]">About</a></li>
+                <li><a href="/sketching" class="transition hover:text-[#d19ff1]">Sketching and process</a></li>
+            </ul>
+        </nav>
 
-<!-- Spacer for layout -->
-<div class="pt-12 lg:pt-16"></div>
+</div>

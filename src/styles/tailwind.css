@@ -27,6 +27,13 @@
     font-weight: 700;
     font-size: x-large;
   }
+
+  a {
+    color: #d19ff1;
+    font-weight: 600;
+    font-size: large;
+    text-transform: uppercase;
+  }
   p {
     color: #ffffff;
     font-family: "Alexandria";
